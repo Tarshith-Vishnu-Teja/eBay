@@ -1,0 +1,67 @@
+<div ng-controller = "shoppingCartCtrl"></div>
+<div ng-controller = "cartCheckoutCtrl">
+	<div class="col-sm-2"></div>
+	   <div class="col-sm-6"><h2>Your eBay Shopping Cart</h2>
+	    <div  style="background-color:white; box-shadow: 2px 2px 2px grey">
+			<p ng-show = "cartEmptyMessage" style = "padding-top:20px; padding-left: 20px; padding-right: 20px; padding-bottom: 100px">
+					<b>Your shopping cart is empty, but it doesn't have to be.</b><br><br>
+					There are lots of great deals and one-of-a-kind items just waiting for you.
+					Start shopping, and look for the "Add to cart" button. You can add several items to your cart from different sellers and pay for them all at once.
+					Start shopping and search for great deals
+					Go to My eBay and see items that you're watching
+			</p>
+			<div ng-show = "cartOccupied">
+				<div tr ng-repeat="x in itemsInCart">
+				    <div style="margin-top:20px">
+						<div class="container" style="width: 100%; ">
+							
+							<div class="col-sm-12">
+								<div class="panel panel-default" style = "margin-top: 20px">
+									<div class="panel-heading" style="background-color:#A0E4B9 ">Seller : {{x.sellerFirstname}}</div>
+									<div class="panel-body">
+									<img src = "images/AdsImage.png" style = "height: 150px" border-style:solid border-size:1px border-color: grey" >
+									 <b>{{x.itemName}}: </b> {{x.itemDescription}}
+									</div>
+									<div class="panel-footer" style = "height: 60px">
+										<div>Price : ${{x.itemPrice}}</div>
+										<div style = "margin-left:100px; margin-top: -20px">Quantity: {{x.userItemQuantity}}</div>
+										<button class = "btn btn-warning" style = "float:right; margin-top: -20px" ng-click = "removeItemFromCart(x.itemName, x.userItemQuantity, x.itemPrice)">Remove</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3"></div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-4" style = "margin-top:3.5%">
+		<div style = "padding-top:1px; 
+							padding-left:10px; 
+							padding-right:10px; 
+							padding-bottom:10px; 
+							background-color:white; 
+							width:250px;  
+							box-shadow: 2px 2px 2px grey">
+			<h3><b>Cart Summary</b></h3>	
+			<legend></legend>			
+			<h3><b><p ng-model = "totalPriceOfItemsInCart">{{totalPriceOfItemsInCart}}</p></b></h3>	
+			<a href = "/checkOut" type = "button" class = "btn btn-primary" style = "width:200px; font-size:17px" >Proceed to Checkout</a>
+			<img src = "images/ebayMoneyBack.png" style = "margin-top:10px">
+			<p style = "font-size:12px">Covers your purchase price plus original shipping on virtually all items. 
+						Get the item you ordered or get your money back.  <a href = "#">Learn more</a></p><br>
+			<h4><b>About Your Cart</b></h4>
+			<legend></legend>
+			<span class="caret"></span>Are items in my cart reserved for me?
+			<legend></legend>
+			<span class="caret"></span>Why are auction or best offer items in my cart?
+			<legend></legend>
+			<span class="caret"></span>Where can I see the items I'm bidding on?
+			<legend></legend>
+			<span class="caret"></span>If I buy from different sellers, will I need to pay separately?
+			<legend></legend>
+			<span class="caret"></span>Can I pay for items from more than one seller or different types of transactions in one payment?
+		</div>
+	</div>
+</div>    

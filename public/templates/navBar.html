@@ -1,0 +1,84 @@
+<div 
+id = "TopDivision" 
+style = "background-color:white; 
+		width: 100%; 
+		height: 5px; 
+		border-radius:8px">
+	<nav 
+	style = "background-color:white; 
+			height: 30px; 
+			box-shadow: 5px 5px 5px grey">
+		<div class="container-fluid">
+			<center>
+				<div style = "width: 1200px; TOP:10px">
+					<span style = "float:left" class = "dropdown">
+						<a role="button" 
+							data-toggle = "dropdown" 
+							class = "dropdown-toggle"><span id = "hiUsername"></span>
+							<span class="caret"></span>
+							</a>
+						
+						&nbsp&nbsp&nbsp&nbsp
+
+					    <ul class="dropdown-menu">
+					      <li><a href="/profile">View Profile</a></li>
+					      <li class="divider"></li>
+					      <li><a href="/logOut">Sign Out</a></li>
+					    </ul>
+						<a href="#">Daily Deals &nbsp|&nbsp</a>
+						<a href = "#">Gift Cards &nbsp|&nbsp</a>
+						<a href = "#">Sell &nbsp|&nbsp</a>
+						<a href = "#">Help & Contact&nbsp</a>
+						<a href = "#"><img src = "images/Scary Goods.png" height = "30px"></a>
+					</span>
+
+				
+					<span class="dropdown" style = "float:right">				
+					    <a role="button" 
+					    	data-toggle = "dropdown" 
+					    	class = "dropdown-toggle">My Ebay<span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu">
+					      <center><li><b>Born On: </b><p id = "dateOfBirth" value = "2016-10-06"></p></li>
+					      <li><b>Ph. No.: </b><p id = "phoneNumber"></p></li>
+					      <li><b>Last Logged In: </b><p id = "lastLoginTime">21.21</p></li>
+					      <li class="divider"></li></center>
+					      <li><a href="/profile" ng-click = "showMyCollections()">My Collections</a></li>
+					    </ul>
+						<a href="#">
+							<span 
+							class="glyphicon glyphicon-bell" 
+							style = "font-size:20px; 
+									margin-left:20px; margin-top:2px"></span>
+						</a>
+						<a href="/shoppingCart">
+							<span 
+							class="glyphicon glyphicon-shopping-cart" 
+							style = "font-size:20px; 
+									margin-left:20px; margin-top:2px"></span>
+						</a>
+					</span>
+				</div>
+			</center>
+		</div>
+	</nav>	
+</div>
+
+<div id = "searchDiv" class = "row" style = "position:relative; margin-top:50px">
+	<div class = "col-sm-3" id = "ImageDiv">
+		<a href = "/home"><img 
+		src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/2000px-EBay_logo.svg.png"
+		height = "50px"
+		style = "float:right"></a>
+	</div>
+	<div class = "col-sm-5">
+		<input 
+		type = "text" 
+		id = "searchBar" 
+		class = "form-control"
+		style = "height: 45px"
+		 placeholder = "Search.." ></input>
+	</div>
+	<button class = "btn btn-default" style = "height: 45px; width:150px; margin-left: -20px">All Categories<span class = "caret"></span></button>
+	<button id = "search" class = "btn btn-primary" style = "height: 45px; width:100px">Search</button>
+</div>

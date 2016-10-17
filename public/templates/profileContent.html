@@ -1,0 +1,171 @@
+<div  ng-controller = "profileContentCtrl">
+	<div style = "height: 40px" id = "profileContent">
+		<div class = "col-sm-2"></div>
+		<div 
+		id = "woodBackGround"
+		class = "col-sm-8" 
+		style = "background-image: url(http://p.ebaystatic.com/aw/social/profile_coverimg_wood.jpg); 
+				position:relative;
+				height: 300px;
+				margin-top: 10px;
+				z-index: -1">
+			<div 
+			id = "userDiv"
+			class = "col-sm-8" 
+			style = "background-color: white; 
+					height: 150px; 
+					margin-left: 200px; 
+					margin-top: 150px">
+				<img src = "images/ProfilePic.png" style = "height: 140px; width:150px; margin-top:5px; margin-left: -10px">
+				<span style = "margin-left: 10px; font-size: 25px" id = "userHandle"><b></b></span>			
+			</div>
+		</div>
+	</div>
+	<div class = "col-sm-3"></div>
+	<div class = "col-sm-6">
+		<p style = "float:left; margin-left:40px">
+			<b>0</b> Followers&nbsp&nbsp|&nbsp&nbsp <b>0</b> Collections&nbsp&nbsp|&nbsp&nbsp<b>0</b> Guides&nbsp&nbsp|&nbsp&nbsp
+			<b>0</b> Reviews&nbsp&nbsp|&nbsp&nbsp<b>0</b> Views &nbsp&nbsp|&nbsp&nbsp 
+			<span class = "glyphicon glyphicon-map-marker" id = "location"></span>
+		</p>
+	</div>
+</div>
+
+<div ng-controller = "getMySellingItems">
+	<div class ="col-sm-4"></div>
+	<form 
+	class = "col-sm-6" 
+	style = "margin-left:-17.5%; 
+			margin-top:2%"><h2>Sell Item On EBay</h2>
+		<a href = "#" ng-click = "showSellItem()"><p>Start Selling On EBay Today !<span class="caret"></span></p></a>
+		<div ng-show = "showSellItemDiv" style = "margin-left:40%">
+			<input class = "form-control" placeholder = "Item Name" ng-model = "itemName"></input><br>
+			<textarea class = "form-control" placeholder = "Item Description" ng-model = "itemDescription"></textarea><br>
+			<input class = "form-control" type = "number" style = "width:200px" placeholder = "Quantity" ng-model = "itemQuantity"><br>
+			<center>
+			<button class = "btn btn-success" ng-click = "priceTagType('F')">Fixed Price</button>
+			<button class = "btn btn-warning" ng-click = "priceTagType('A')">Auction</button>
+			</center><br>
+			<center>
+			<input class = "form-control" type = "number" style = "width:200px" placeholder = "Buy it Now Price" ng-show = "fixedPrice" ng-model = "fixedPriceType">
+			<input class = "form-control" type = "number"  style = "width:200px" placeholder = "Duration" ng-show = "fixedPrice" ng-model = "durationFP">
+			<input class = "form-control" type = "number"  style = "width:200px" placeholder = "Starting Price" ng-show = "auction" ng-model = "auctionPriceType">
+			<input class = "form-control" type = "number"  style = "width:200px" placeholder = "Duration" ng-show = "auction" ng-model = "durationAP">
+			<input class = "form-control" type = "text" style = "width: 200px" placeholder = "DAY/HOUR/MINUTE" ng-show = "auction" ng-model = "timeFormat">
+			</center>
+			<button class = "btn btn-primary" style = "float:right" ng-click = "sellItem()">Sell !</button>
+			<div style = "height:50px"></div>
+		</div>
+	</form>
+	<center><legend style = "width:70%"></legend></center>
+	<div class = "col-sm-2"></div>
+	<div class = "col-sm-8" style = "margin-left: -1%">
+		<h2>My Advertisements</h2>
+		<a href = "#" ng-click = "showMyCollections()"><p>View My Advertisements</p></a>
+		<div  class="row" class = "col-sm-12" ng-show = "showMyCollectionsDiv">
+			<div tr ng-repeat="x in itemsSelling">
+			    <div style="margin-top:20px ">
+					<div class="container" style="width: 100%; ">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#A0E4B9 ">{{x.item_name}}</div>
+								<div class="panel-body">
+								Description : {{x.item_description}}
+								</div>
+								<div class="panel-footer">
+									Price : ${{x.item_price}}	<p style = "float:right">Quantity Available : {{x.item_quantity}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3"></div>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<center><legend style = "width:70%"></legend></center>
+	<div class = "col-sm-2"></div>
+	<div class = "col-sm-8" style = "margin-left:-1%; margin-top:-1%">
+		<h2>My Purchases</h2>
+		<a href = "#" ng-click = "showMyPurchases()"><p>View Your Purchases</p></a>
+		<div  class="row" class = "col-sm-12" ng-show = "showMyPurchasesDiv">
+			<div tr ng-repeat="x in myPurchases">
+			    <div style="margin-top:20px ">
+					<div class="container" style="width: 100%; ">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#A0E4B9 ">{{x.item_name}}</div>
+								<div class="panel-body">
+								Bill ID : {{x.bill_id}}	<p style = "float:right">Seller : {{x.seller_email_id}}</p><p>Product ID : {{x.product_id}}</p>
+								</div>
+								<div class="panel-footer">
+									Price : ${{x.total_priceOfThisItem}}  <p style = "float:right">Quantity Bought : {{x.quantity_bought}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3"></div>
+					</div>
+			    </div>
+			</div>
+		</div>
+		<div ng-show = "showPurchasesEmptyDiv"><p>You Have Not Purchased anything yet! Go Buy Now!</p></div>
+	</div>
+	<center><legend style = "width:70%"></legend></center>
+	<div class = "col-sm-2"></div>
+	<div class = "col-sm-8" style = "margin-left:-1%; margin-top:-1%">
+		<h2>My Bids</h2>
+		<a href = "#" ng-click = "showMyBids()"><p>View Your Bids</p></a>
+		<div  class="row" class = "col-sm-12" ng-show = "showMyBidsDiv">
+			<div tr ng-repeat="x in myBids">
+			    <div style="margin-top:20px ">
+					<div class="container" style="width: 100%; ">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#A0E4B9 ">{{x.item_name}}</div>
+								<div class="panel-body">
+									<p style = "float:right">Seller : {{x.seller_email_id}}</p><p>Product ID : {{x.product_id}}</p>
+								</div>
+								<div class="panel-footer">
+									Price : ${{x.total_priceOfThisItem}}  <p style = "float:right">Quantity Asked for : {{x.quantity_bought}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3"></div>
+					</div>
+			    </div>
+			</div>
+		</div>
+		<div ng-show = "showBidsEmptyDiv"><p>You Have Not Bid on anything yet! Go Bid Now!</p></div>
+	</div>
+	<center><legend style = "width:70%"></legend></center>
+	<div class = "col-sm-2"></div>
+	<div class = "col-sm-8" style = "margin-left:-1%; margin-top:-1%">
+		<h2>My Sales</h2>
+		<a href = "#" ng-click = "showMySales()"><p>View Your Sales</p></a>
+		<div  class="row" class = "col-sm-12" ng-show = "showMySalesDiv">
+			<div tr ng-repeat="x in mySales">
+			    <div style="margin-top:20px ">
+					<div class="container" style="width: 100%; ">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6">
+							<div class="panel panel-default">
+								<div class="panel-heading" style="background-color:#A0E4B9 ">{{x.item_name}}</div>
+								<div class="panel-body">
+								Bill ID : {{x.bill_id}}	<p style = "float:right">Seller : {{x.buyer_email}}</p><p>Product ID : {{x.product_id}}</p>
+								</div>
+								<div class="panel-footer">
+									Sold For : ${{x.total_priceOfThisItem}}	<p style = "float:right">Quantity Sold : {{x.quantity_bought}}</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3"></div>
+					</div>
+			    </div>
+			</div>
+		</div>
+		<div ng-show = "showSalesEmptyDiv"><p>You Have not Sold Anything yet! Wait for Customers :)</p></div>
+	</div>
+</div>

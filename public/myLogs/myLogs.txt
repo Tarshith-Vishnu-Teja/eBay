@@ -1,0 +1,106 @@
+Logged In at Sun Oct 16 2016 23:08:47 GMT-0700 (Pacific Daylight Time) As: vishnuteja@gmail.com
+
+vishnuteja@gmail.com Requested Home Page at Sun Oct 16 2016 23:08:47 GMT-0700 (Pacific Daylight Time)
+
+Loaded All the Ads for vishnuteja@gmail.com
+
+vishnuteja@gmail.com Requested Profile Page at Sun Oct 16 2016 23:08:51 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: View My Advertisements at Sun Oct 16 2016 23:08:51 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: ViewMySales at Sun Oct 16 2016 23:09:01 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Home Page at Sun Oct 16 2016 23:09:03 GMT-0700 (Pacific Daylight Time)
+
+Loaded All the Ads for vishnuteja@gmail.com
+
+vishnuteja@gmail.com Clicked Button ID: addToCart and Apple 15.4" MacBook Pro with Product ID 27 was added to cart at Sun Oct 16 2016 23:09:07 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Shopping Cart Page at Sun Oct 16 2016 23:09:07 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested for Items In Cart at Sun Oct 16 2016 23:09:07 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Check Out Page at Sun Oct 16 2016 23:09:09 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: validate and credit card was successfully validated at 2016-10-27T07:00:00.000Z
+
+vishnuteja@gmail.com Clicked Button ID: buy and user purchased all the items in the cart at Sun Oct 16 2016 23:09:25 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Profile Page at Sun Oct 16 2016 23:09:25 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: View My Advertisements at Sun Oct 16 2016 23:09:26 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: ViewMyPurchases at Sun Oct 16 2016 23:09:28 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Home Page at Sun Oct 16 2016 23:09:31 GMT-0700 (Pacific Daylight Time)
+
+Loaded All the Ads for vishnuteja@gmail.com
+
+vishnuteja@gmail.com Clicked Button ID: placeBid and Mouse with Product ID 29 and bid Failed at Sun Oct 16 2016 23:09:38 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: placeBid and Ear Phones with Product ID 30 and bid Failed at Sun Oct 16 2016 23:09:45 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Home Page at Sun Oct 16 2016 23:09:51 GMT-0700 (Pacific Daylight Time)
+
+Loaded All the Ads for vishnuteja@gmail.com
+
+vishnuteja@gmail.com Clicked Button ID: placeBid and Ear Phones with Product ID 30 and bid Failed at Sun Oct 16 2016 23:09:57 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: placeBid and Architect Kit with Product ID 32 was bidded for a Price of 26 at Sun Oct 16 2016 23:10:09 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked on link ID: AllBids and Requested List of Bidders for Product ID: 32 at Sun Oct 16 2016 23:10:12 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked on link ID: AllBids and Requested List of Bidders for Product ID: 30 at Sun Oct 16 2016 23:10:16 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Profile Page at Sun Oct 16 2016 23:10:20 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: View My Advertisements at Sun Oct 16 2016 23:10:20 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: ViewMyBids at Sun Oct 16 2016 23:10:22 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: ViewMyPurchases at Sun Oct 16 2016 23:10:24 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested Shopping Cart Page at Sun Oct 16 2016 23:10:27 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Requested for Items In Cart at Sun Oct 16 2016 23:10:27 GMT-0700 (Pacific Daylight Time)
+
+vishnuteja@gmail.com Clicked Button ID: logOut and was logged out of the session at Sun Oct 16 2016 23:10:29 GMT-0700 (Pacific Daylight Time)
+
+
+
+
+Logged In at Sun Oct 16 2016 23:10:37 GMT-0700 (Pacific Daylight Time) As: sushma@gmail.com
+
+sushma@gmail.com Requested Home Page at Sun Oct 16 2016 23:10:37 GMT-0700 (Pacific Daylight Time)
+
+Loaded All the Ads for sushma@gmail.com
+
+sushma@gmail.com Requested Profile Page at Sun Oct 16 2016 23:10:43 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Clicked Button ID: View My Advertisements at Sun Oct 16 2016 23:10:43 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Clicked Button ID: ViewMyPurchases at Sun Oct 16 2016 23:10:46 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Clicked Button ID: ViewMySales at Sun Oct 16 2016 23:10:49 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Requested Shopping Cart Page at Sun Oct 16 2016 23:10:52 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Requested for Items In Cart at Sun Oct 16 2016 23:10:52 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Requested Home Page at Sun Oct 16 2016 23:10:55 GMT-0700 (Pacific Daylight Time)
+
+Loaded All the Ads for sushma@gmail.com
+
+sushma@gmail.com Requested Profile Page at Sun Oct 16 2016 23:10:56 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Clicked Button ID: View My Advertisements at Sun Oct 16 2016 23:10:57 GMT-0700 (Pacific Daylight Time)
+
+sushma@gmail.com Requested Home Page at Sun Oct 16 2016 23:10:58 GMT-0700 (Pacific Daylight Time)
+
+Loaded All the Ads for sushma@gmail.com
+
+sushma@gmail.com Clicked Button ID: logOut and was logged out of the session at Sun Oct 16 2016 23:11:06 GMT-0700 (Pacific Daylight Time)
+
+
+
+
